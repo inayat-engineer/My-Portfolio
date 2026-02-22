@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inayat Ali Shar - Computer Systems Engineer passionate about AI, Data Science, and building cool things with code.">
-    <meta name="keywords" content="Inayat Ali Shar, Portfolio, AI, Data Science, Machine Learning, Computer Systems Engineer, MUET, Python Developer">
+    <meta name="description"
+        content="Inayat Ali Shar - Computer Systems Engineer passionate about AI, Data Science, and building cool things with code.">
+    <meta name="keywords"
+        content="Inayat Ali Shar, Portfolio, AI, Data Science, Machine Learning, Computer Systems Engineer, MUET, Python Developer">
     <meta name="author" content="Inayat Ali Shar">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Inayat Ali Shar - AI & Data Science Enthusiast">
@@ -12,21 +15,17 @@
     <meta property="og:type" content="website">
     <title>Inayat Ali Shar | AI & Data Science Enthusiast</title>
 
-    <!-- Google Fonts - Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -77,8 +76,15 @@
 
         /* Floating Animation */
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
         }
 
         .floating {
@@ -87,8 +93,15 @@
 
         /* Pulse Glow - Teal/Blue */
         @keyframes pulse-cyber {
-            0%, 100% { box-shadow: 0 0 20px rgba(20, 184, 166, 0.4), 0 0 40px rgba(59, 130, 246, 0.2); }
-            50% { box-shadow: 0 0 40px rgba(20, 184, 166, 0.6), 0 0 60px rgba(59, 130, 246, 0.4); }
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(20, 184, 166, 0.4), 0 0 40px rgba(59, 130, 246, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(20, 184, 166, 0.6), 0 0 60px rgba(59, 130, 246, 0.4);
+            }
         }
 
         .pulse-cyber {
@@ -121,133 +134,141 @@
         }
     </style>
 </head>
+
 <body class="bg-slate-900 text-slate-300">
-    <!-- Navbar - Fixed Dark Glass Effect -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-blue-500/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo - Updated with Cyber Colors -->
-                <a href="#home" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                <a href="#home"
+                    class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
                     &lt; Inayat /&gt;
                 </a>
 
-                <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Home</a>
-                    <a href="#about" class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">About</a>
-                    <a href="#skills" class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Skills</a>
-                    <a href="#projects" class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Projects</a>
-                    <a href="#contact" class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Contact</a>
+                    <a href="#home"
+                        class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Home</a>
+                    <a href="#about"
+                        class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">About</a>
+                    <a href="#skills"
+                        class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Skills</a>
+                    <a href="#projects"
+                        class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Projects</a>
+                    <a href="#contact"
+                        class="nav-link text-slate-400 hover:text-teal-400 transition-colors duration-300">Contact</a>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-slate-400 hover:text-teal-400 focus:outline-none transition-colors">
+                <button id="mobile-menu-btn"
+                    class="md:hidden text-slate-400 hover:text-teal-400 focus:outline-none transition-colors">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-slate-900/95 backdrop-blur-md border-l border-blue-500/20 md:hidden z-50">
+        <div id="mobile-menu"
+            class="mobile-menu fixed top-0 right-0 h-full w-64 bg-slate-900/95 backdrop-blur-md border-l border-blue-500/20 md:hidden z-50">
             <div class="flex flex-col h-full p-6">
                 <button id="close-menu-btn" class="self-end text-slate-400 hover:text-teal-400 mb-8 transition-colors">
                     <i class="fas fa-times text-2xl"></i>
                 </button>
-                <a href="#home" class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">Home</a>
-                <a href="#about" class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">About</a>
-                <a href="#skills" class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">Skills</a>
-                <a href="#projects" class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">Projects</a>
-                <a href="#contact" class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors">Contact</a>
+                <a href="#home"
+                    class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">Home</a>
+                <a href="#about"
+                    class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">About</a>
+                <a href="#skills"
+                    class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">Skills</a>
+                <a href="#projects"
+                    class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors border-b border-slate-700">Projects</a>
+                <a href="#contact"
+                    class="mobile-nav-link py-3 text-slate-400 hover:text-teal-400 transition-colors">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 bg-slate-900">
-        <!-- Background Gradient Blobs -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 bg-slate-900">
         <div class="absolute top-32 left-10 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl floating"></div>
-        <div class="absolute bottom-32 right-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl floating" style="animation-delay: -2s;"></div>
+        <div class="absolute bottom-32 right-10 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl floating"
+            style="animation-delay: -2s;"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="text-center" data-aos="fade-up">
-                <!-- Profile Image with Cyber Glow and Gradient Blob Behind -->
                 <div class="mb-8 relative inline-block">
-                    <!-- Gradient Blob Behind Profile -->
                     <div class="gradient-blob-cyber top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-                    <div class="relative z-10 w-44 h-44 rounded-full overflow-hidden border-4 border-teal-400/50 p-1 pulse-cyber">
-                        <img src="portfolio.jpeg"
-                             alt="Inayat Ali Shar"
-                             class="w-full h-full rounded-full object-cover">
+                    <div
+                        class="relative z-10 w-44 h-44 rounded-full overflow-hidden border-4 border-teal-400/50 p-1 pulse-cyber">
+                        <img src="portfolio.jpeg" alt="Inayat Ali Shar" class="w-full h-full rounded-full object-cover">
                     </div>
                 </div>
 
-                <!-- Greeting - Teal Color -->
                 <p class="text-teal-400 text-lg mb-4" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-hand-wave mr-2"></i>Welcome to my portfolio!
                 </p>
 
-                <!-- Name - Gradient Text -->
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white" data-aos="fade-up" data-aos-delay="200">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Inayat Ali </span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Inayat Ali
+                    </span>
                 </h1>
 
-                <!-- Main Title -->
                 <h2 class="text-2xl md:text-3xl font-semibold text-white mb-4" data-aos="fade-up" data-aos-delay="300">
                     AI & Data Science Enthusiast
                 </h2>
 
-                <!-- Subtitle -->
                 <p class="text-lg md:text-xl text-slate-400 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    Computer Systems Engineer | Exploring <span class="text-teal-400">Network Automation</span> & <span class="text-blue-400">Web Dev</span>
+                    Computer Systems Engineer | Exploring <span class="text-teal-400">Network Automation</span> & <span
+                        class="text-blue-400">Web Dev</span>
                 </p>
 
-                <!-- Humanized Tagline -->
                 <p class="text-base text-slate-500 mb-8 max-w-xl mx-auto" data-aos="fade-up" data-aos-delay="500">
                     Just a curious engineer who loves turning ideas into code. <br class="hidden sm:block">
                     Currently figuring things out, one project at a time. ☕
                 </p>
 
-                <!-- Location -->
                 <p class="text-slate-500 mb-8" data-aos="fade-up" data-aos-delay="550">
                     <i class="fas fa-map-marker-alt text-teal-400 mr-2"></i>Jamshoro, Pakistan
                 </p>
 
-                <!-- Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10" data-aos="fade-up" data-aos-delay="600">
-                    <a href="#projects" class="px-8 py-4 rounded-full text-lg font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all hover:-translate-y-1">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10" data-aos="fade-up"
+                    data-aos-delay="600">
+                    <a href="#projects"
+                        class="px-8 py-4 rounded-full text-lg font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all hover:-translate-y-1">
                         <i class="fas fa-rocket mr-2"></i>See What I've Built
                     </a>
-                    <a href="#contact" class="px-8 py-4 rounded-full text-lg font-semibold border-2 border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400 transition-all hover:-translate-y-1">
+                    <a href="#contact"
+                        class="px-8 py-4 rounded-full text-lg font-semibold border-2 border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400 transition-all hover:-translate-y-1">
                         <i class="fas fa-coffee mr-2"></i>Let's Chat
                     </a>
                 </div>
 
-                <a href="resume.pdf" download="Inayat Ali resume.pdf"
-   class="inline-flex items-center gap-2 px-6 py-3 border border-teal-500 text-teal-400 font-semibold rounded-full hover:bg-teal-500/10 transition-all transform hover:scale-105">
+                <a href="RESUME.pdf" download="Inayat Ali resume.pdf"
+                    class="inline-flex items-center gap-2 px-6 py-3 border border-teal-500 text-teal-400 font-semibold rounded-full hover:bg-teal-500/10 transition-all transform hover:scale-105">
 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
-    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M12 9.75l-3 3m0 0l3 3m-3-3H21" />
+                    </svg>
 
-    Download Resume
-</a>
+                    Download Resume
+                </a>
 
-                <!-- Social Icons -->
                 <div class="flex justify-center gap-6" data-aos="fade-up" data-aos-delay="700">
-                    <a href="https://linkedin.com/in/inayat-engineer" target="_blank" rel="noopener noreferrer" class="text-2xl text-slate-500 hover:text-teal-400 transition-colors duration-300">
+                    <a href="https://linkedin.com/in/inayat-engineer" target="_blank" rel="noopener noreferrer"
+                        class="text-2xl text-slate-500 hover:text-teal-400 transition-colors duration-300">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/inayat-engineer" target="_blank" rel="noopener noreferrer" class="text-2xl text-slate-500 hover:text-teal-400 transition-colors duration-300">
+                    <a href="https://github.com/inayat-engineer" target="_blank" rel="noopener noreferrer"
+                        class="text-2xl text-slate-500 hover:text-teal-400 transition-colors duration-300">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="mailto:inayatalishar.786@gmail.com" rel="noopener noreferrer" class="text-2xl text-slate-500 hover:text-teal-400 transition-colors duration-300">
+                    <a href="mailto:inayatalishar.786@gmail.com" rel="noopener noreferrer"
+                        class="text-2xl text-slate-500 hover:text-teal-400 transition-colors duration-300">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
         </div>
 
-        <!-- Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2" data-aos="fade-up" data-aos-delay="800">
             <a href="#about" class="text-slate-600 hover:text-teal-400 transition-colors">
                 <i class="fas fa-chevron-down text-2xl animate-bounce"></i>
@@ -255,67 +276,81 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <div class="section-divider mx-auto w-1/2 my-4"></div>
+
     <section id="about" class="py-20 relative bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-teal-400 text-sm uppercase tracking-wider mb-2">A Little About Me</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Who Am I?</h2>
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Who Am I?</h2>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <!-- Image/Visual -->
                 <div class="relative" data-aos="fade-right">
-                    <div class="bg-slate-800 rounded-2xl p-6 relative overflow-hidden border border-blue-500/30">
+                    <div
+                        class="bg-slate-800 rounded-2xl p-6 relative overflow-hidden border border-blue-500/30">
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=400&fit=crop"
-                             alt="Tech workspace"
-                             class="rounded-xl w-full h-64 object-cover">
-                        <div class="absolute top-4 right-4 bg-gradient-to-r from-teal-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            alt="Tech workspace" class="rounded-xl w-full h-64 object-cover">
+                        <div
+                            class="absolute top-4 right-4 bg-gradient-to-r from-teal-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
                             <i class="fas fa-laptop-code mr-2"></i>Always Learning
                         </div>
                     </div>
-                    <!-- Floating Elements -->
-                    <div class="absolute -bottom-4 -left-4 bg-slate-800 border border-blue-500/30 p-4 rounded-xl floating" style="animation-delay: -1s;">
+                    <div class="absolute -bottom-4 -left-4 bg-slate-800 border border-blue-500/30 p-4 rounded-xl floating"
+                        style="animation-delay: -1s;">
                         <i class="fas fa-brain text-3xl text-teal-400"></i>
                     </div>
-                    <div class="absolute -top-4 -right-4 bg-slate-800 border border-blue-500/30 p-4 rounded-xl floating" style="animation-delay: -2s;">
+                    <div class="absolute -top-4 -right-4 bg-slate-800 border border-blue-500/30 p-4 rounded-xl floating"
+                        style="animation-delay: -2s;">
                         <i class="fas fa-code text-3xl text-blue-400"></i>
                     </div>
                 </div>
 
-                <!-- Content - Humanized Tone -->
                 <div data-aos="fade-left">
                     <h3 class="text-2xl font-bold text-white mb-6">
-                        Engineering Student at <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">MUET</span>
+                        Passionate Problem Solver & Engineering Student
                     </h3>
                     <p class="text-slate-300 mb-6 leading-relaxed">
-                        Hey! I'm currently pursuing Computer Systems Engineering at Mehran University (MUET), Jamshoro.
-                        I'm that person who gets genuinely excited about how machines can learn and how data tells stories.
+                        Hi, I'm Inayat! I'm currently in my 6th semester of Computer Systems Engineering
+                        at MUET, Jamshoro. I enjoy turning complex problems into elegant code and
+                        learning something new every single day.
                     </p>
                     <p class="text-slate-300 mb-6 leading-relaxed">
-                        My days are usually spent exploring <span class="text-teal-400 font-medium">Machine Learning</span>,
-                        tinkering with <span class="text-blue-400 font-medium">Network Automation</span>, and building
-                        <span class="text-cyan-400 font-medium">Web Apps</span> that actually solve problems.
-                        I believe in learning by doing – even if it means breaking things along the way! 😄
+                        I spend my time exploring <span class="text-teal-400 font-medium">Machine
+                            Learning</span>, diving into <span class="text-blue-400 font-medium">Data
+                            Science</span>, and building practical <span
+                            class="text-cyan-400 font-medium">Full-Stack Web Apps</span>. I'm a firm
+                        believer that the best way to understand technology is to roll up your sleeves
+                        and build things from scratch.
                     </p>
-                    <p class="text-slate-500 mb-6 text-sm italic">
-                        "The best way to learn is to build something, break it, then figure out why it broke."
+                    <p class="text-slate-500 mb-6 text-sm italic border-l-4 border-teal-500 pl-4 py-1">
+                        "I am always doing that which I cannot do, in order that I may learn how to do
+                        it."
                     </p>
 
-                    <!-- Quick Stats -->
                     <div class="grid grid-cols-3 gap-4 mt-8">
-                        <div class="bg-slate-800 border border-blue-500/30 rounded-xl p-4 text-center hover:border-teal-400/50 transition-colors">
-                            <p class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">10+</p>
+                        <div
+                            class="bg-slate-800 border border-blue-500/30 rounded-xl p-4 text-center hover:border-teal-400/50 transition-colors">
+                            <p
+                                class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                                10+</p>
                             <p class="text-slate-400 text-sm">Projects</p>
                         </div>
-                        <div class="bg-slate-800 border border-blue-500/30 rounded-xl p-4 text-center hover:border-teal-400/50 transition-colors">
-                            <p class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">3+</p>
+                        <div
+                            class="bg-slate-800 border border-blue-500/30 rounded-xl p-4 text-center hover:border-teal-400/50 transition-colors">
+                            <p
+                                class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                                3+</p>
                             <p class="text-slate-400 text-sm">Years Coding</p>
                         </div>
-                        <div class="bg-slate-800 border border-blue-500/30 rounded-xl p-4 text-center hover:border-teal-400/50 transition-colors">
-                            <p class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">∞</p>
-                            <p class="text-slate-400 text-sm">Curiosity</p>
+                        <div
+                            class="bg-slate-800 border border-blue-500/30 rounded-xl p-4 text-center hover:border-teal-400/50 transition-colors">
+                            <p
+                                class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                                100%</p>
+                            <p class="text-slate-400 text-sm">Dedicated</p>
                         </div>
                     </div>
                 </div>
@@ -323,28 +358,28 @@
         </div>
     </section>
 
-    <!-- Section Divider -->
     <div class="section-divider mx-auto w-1/2 my-4"></div>
 
-    <!-- Skills Section -->
     <section id="skills" class="py-20 relative bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-teal-400 text-sm uppercase tracking-wider mb-2">What I'm Good At</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Skills & Tools</h2>
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Skills & Tools</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- AI/ML Skills -->
-                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6">
+                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 hover:border-teal-400/50 transition-all hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6">
                         <i class="fas fa-brain text-2xl text-white"></i>
                     </div>
+
                     <h3 class="text-xl font-bold text-white mb-4">AI & Data Science</h3>
                     <p class="text-slate-400 mb-6 text-sm">Teaching machines to think (or at least pretend to).</p>
 
-                    <!-- Skills List -->
                     <div class="space-y-4">
                         <div>
                             <div class="flex justify-between mb-2">
@@ -385,15 +420,15 @@
                     </div>
                 </div>
 
-                <!-- Web Dev Skills -->
-                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6">
+                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 hover:border-teal-400/50 transition-all hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6">
                         <i class="fas fa-code text-2xl text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4">Web Development</h3>
                     <p class="text-slate-400 mb-6 text-sm">Building things people actually use on the internet.</p>
 
-                    <!-- Skills List -->
                     <div class="space-y-4">
                         <div>
                             <div class="flex justify-between mb-2">
@@ -434,15 +469,15 @@
                     </div>
                 </div>
 
-                <!-- Networking Skills -->
-                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6">
+                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 hover:border-teal-400/50 transition-all hover:-translate-y-2"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center mb-6">
                         <i class="fas fa-network-wired text-2xl text-white"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4">Networking</h3>
                     <p class="text-slate-400 mb-6 text-sm">Understanding how computers talk to each other.</p>
 
-                    <!-- Skills List -->
                     <div class="space-y-4">
                         <div>
                             <div class="flex justify-between mb-2">
@@ -484,26 +519,31 @@
                 </div>
             </div>
 
-            <!-- Additional Tools -->
             <div class="mt-16" data-aos="fade-up" data-aos-delay="400">
                 <h3 class="text-lg font-semibold text-slate-300 text-center mb-8">Other Tools I Use</h3>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <span class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
+                    <span
+                        class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
                         <i class="fab fa-python mr-2"></i>Python
                     </span>
-                    <span class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
+                    <span
+                        class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
                         <i class="fab fa-git-alt mr-2"></i>Git
                     </span>
-                    <span class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
+                    <span
+                        class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
                         <i class="fab fa-linux mr-2"></i>Linux
                     </span>
-                    <span class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
+                    <span
+                        class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
                         <i class="fas fa-database mr-2"></i>SQL
                     </span>
-                    <span class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
+                    <span
+                        class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
                         <i class="fas fa-terminal mr-2"></i>Bash
                     </span>
-                    <span class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
+                    <span
+                        class="bg-slate-800 border border-blue-500/30 px-5 py-2 rounded-full text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors text-sm">
                         <i class="fab fa-docker mr-2"></i>Docker
                     </span>
                 </div>
@@ -511,25 +551,82 @@
         </div>
     </section>
 
-    <!-- Section Divider -->
     <div class="section-divider mx-auto w-1/2 my-4"></div>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-20 relative bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-teal-400 text-sm uppercase tracking-wider mb-2">Stuff I've Built</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Featured Projects</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Featured Projects</h2>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1: Network Security Assistant -->
-                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl overflow-hidden group hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative overflow-hidden">
+                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl overflow-hidden flex flex-col group hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden shrink-0">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=400&fit=crop"
+                            alt="Geolocation Tracker Pro"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                <i class="fas fa-globe mr-1"></i>Web App
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-3">Geolocation Tracker Pro</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            A secure, full-stack application that fetches and maps user public IPs using IP-API and
+                            HTML5 Geolocation. Features a "Fail-Fast" architecture and a premium "Glassmorphism" UI. 🌍
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Flask</span>
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Leaflet.js</span>
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Bootstrap 5</span>
+                        </div>
+                        <a href="https://github.com/inayat-engineer/geolocation-tracker" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl overflow-hidden flex flex-col group hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden shrink-0">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+                            alt="ExpenseIQ"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                                <i class="fas fa-chart-pie mr-1"></i>Full-Stack
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-3">ExpenseIQ Dashboard</h3>
+                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
+                            A secure personal finance management dashboard. Built with a Fetch API backend for zero page
+                            reloads, and integrates Chart.js for real-time interactive financial analytics. 💰
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Python</span>
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">SQLite</span>
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Chart.js</span>
+                        </div>
+                        <a href="https://github.com/inayat-engineer/expense-tracker" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
+                            <i class="fab fa-github mr-2"></i>View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl overflow-hidden flex flex-col group hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden shrink-0">
                         <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop"
-                             alt="Network Security Assistant"
-                             class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
+                            alt="Network Security Assistant"
+                            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4">
                             <span class="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -537,113 +634,46 @@
                             </span>
                         </div>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <h3 class="text-xl font-bold text-white mb-3">Network Security Assistant</h3>
                         <p class="text-slate-400 mb-4 text-sm leading-relaxed">
-                            A real-time dashboard that monitors network traffic and flags suspicious activity.
-                            Built with Pyshark for packet capture and Streamlit for the interface.
-                            Pretty cool for learning how hackers think! 🔐
+                            A real-time dashboard that monitors network traffic and acts as a mini IDS. Built with
+                            FastAPI and Streamlit to detect anomalies like port scans instantly. 🔐
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Python</span>
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">FastAPI</span>
                             <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Streamlit</span>
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Wireshark</span>
+                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Pyshark</span>
                         </div>
                         <a href="https://github.com/inayat-engineer/Network---Assistant---Monitor" target="_blank" rel="noopener noreferrer"
-                           class="inline-flex items-center px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
-                            <i class="fab fa-github mr-2"></i>View Code
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Olympic Games Data Analysis -->
-                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl overflow-hidden group hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
-                             alt="Olympic Games Data Analysis"
-                             class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                                <i class="fas fa-chart-line mr-1"></i>Data
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-3">Olympic Data Analysis</h3>
-                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
-                            Ever wondered which country dominates swimming? This app explores 120+ years of Olympic history
-                            with interactive charts. Data nerds, this one's for you! 📊
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Pandas</span>
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Plotly</span>
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Streamlit</span>
-                        </div>
-                        <a href="https://github.com/inayat-engineer/Olympic-games-data-analysis" target="_blank" rel="noopener noreferrer"
-                           class="inline-flex items-center px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
-                            <i class="fab fa-github mr-2"></i>View Code
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3: Sindh Quiz Chatbot -->
-                <div class="bg-slate-800 border border-blue-500/30 rounded-2xl overflow-hidden group hover:border-teal-400/50 transition-all hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"
-                             alt="Sindh Quiz Chatbot"
-                             class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                                <i class="fas fa-robot mr-1"></i>AI
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-3">Sindh Quiz Chatbot</h3>
-                        <p class="text-slate-400 mb-4 text-sm leading-relaxed">
-                            A fun chatbot that quizzes you about Sindhi culture, history, and traditions.
-                            Built to celebrate my roots while learning NLP.
-                            Try beating my high score! 🎯
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">Python</span>
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">NLP</span>
-                            <span class="bg-teal-400/10 border border-teal-400/30 text-teal-400 px-3 py-1 rounded-full text-xs">NLTK</span>
-                        </div>
-                        <a href="https://github.com/inayat-engineer/Sindh-quiz-chat-bot" target="_blank" rel="noopener noreferrer"
-                           class="inline-flex items-center px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
+                            class="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
                             <i class="fab fa-github mr-2"></i>View Code
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- View All Projects Button -->
             <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
                 <a href="https://github.com/inayat-engineer" target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center px-8 py-4 rounded-full font-semibold border-2 border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400 transition-all hover:-translate-y-1">
+                    class="inline-flex items-center px-8 py-4 rounded-full font-semibold border-2 border-teal-400/50 text-teal-400 hover:bg-teal-400/10 hover:border-teal-400 transition-all hover:-translate-y-1">
                     <i class="fab fa-github mr-2"></i>See More on GitHub
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Section Divider -->
     <div class="section-divider mx-auto w-1/2 my-4"></div>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-20 relative bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
             <div class="text-center mb-16" data-aos="fade-up">
                 <p class="text-teal-400 text-sm uppercase tracking-wider mb-2">Say Hello</p>
-                <h2 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">Get In Touch</h2>
+                <h2
+                    class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Get In Touch</h2>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12">
-                <!-- Contact Info -->
                 <div data-aos="fade-right">
                     <h3 class="text-2xl font-bold text-white mb-6">Let's Build Something Cool Together</h3>
                     <p class="text-slate-300 mb-8 leading-relaxed">
@@ -651,25 +681,28 @@
                         I'm always up for a chat! Drop me a message and I'll get back to you as soon as I can.
                     </p>
 
-                    <!-- Contact Details -->
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-envelope text-white"></i>
                             </div>
                             <div>
                                 <h4 class="text-white font-semibold mb-1">Email Me</h4>
-                                <a href="mailto:inayatalishar.786@gmail.com" rel="noopener noreferrer" class="text-slate-400 hover:text-teal-400 transition-colors block text-sm">
+                                <a href="mailto:inayatalishar.786@gmail.com" rel="noopener noreferrer"
+                                    class="text-slate-400 hover:text-teal-400 transition-colors block text-sm">
                                     inayatalishar.786@gmail.com
                                 </a>
-                                <a href="mailto:23cs050@students.muet.edu.pk" rel="noopener noreferrer" class="text-slate-400 hover:text-teal-400 transition-colors block text-sm">
+                                <a href="mailto:23cs050@students.muet.edu.pk" rel="noopener noreferrer"
+                                    class="text-slate-400 hover:text-teal-400 transition-colors block text-sm">
                                     23cs050@students.muet.edu.pk
                                 </a>
                             </div>
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-map-marker-alt text-white"></i>
                             </div>
                             <div>
@@ -679,7 +712,8 @@
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-blue-600 flex items-center justify-center flex-shrink-0">
                                 <i class="fas fa-graduation-cap text-white"></i>
                             </div>
                             <div>
@@ -689,56 +723,55 @@
                         </div>
                     </div>
 
-                    <!-- Social Links -->
                     <div class="mt-10">
                         <h4 class="text-slate-300 font-semibold mb-4">Find me online</h4>
                         <div class="flex gap-4">
                             <a href="https://linkedin.com/in/inayat-engineer" target="_blank" rel="noopener noreferrer"
-                               class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors">
+                                class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors">
                                 <i class="fab fa-linkedin text-xl"></i>
                             </a>
                             <a href="https://github.com/inayat-engineer" target="_blank" rel="noopener noreferrer"
-                               class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors">
+                                class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors">
                                 <i class="fab fa-github text-xl"></i>
                             </a>
                             <a href="mailto:inayatalishar.786@gmail.com"
-                               class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors">
+                                class="w-12 h-12 bg-slate-800 border border-blue-500/30 rounded-xl flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-400/50 transition-colors">
                                 <i class="fas fa-envelope text-xl"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div data-aos="fade-left">
-                    <form action="https://formspree.io/f/xqedqbvv" method="POST" id="contact-form" class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 space-y-6">
+                    <form action="https://formspree.io/f/xqedqbvv" method="POST" id="contact-form"
+                        class="bg-slate-800 border border-blue-500/30 rounded-2xl p-8 space-y-6">
                         <div class="mb-6">
                             <label for="name" class="block text-slate-300 font-medium mb-2 text-sm">Your Name</label>
                             <input type="text" id="name" name="name" required maxlength="15"
-                                   class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/20 transition-all"
-                                   placeholder="What should I call you?">
+                                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/20 transition-all"
+                                placeholder="What should I call you?">
                         </div>
 
                         <div class="mb-6">
                             <label for="email" class="block text-slate-300 font-medium mb-2 text-sm">Your Email</label>
                             <input type="email" id="email" name="email" required
-                                   class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/20 transition-all"
-                                   placeholder="your@email.com">
+                                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/20 transition-all"
+                                placeholder="your@email.com">
                         </div>
 
                         <div class="mb-6">
-                            <label for="message" class="block text-slate-300 font-medium mb-2 text-sm">Your Message</label>
+                            <label for="message" class="block text-slate-300 font-medium mb-2 text-sm">Your
+                                Message</label>
                             <textarea id="message" name="message" rows="4" required maxlength="2000"
-                                      class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/20 transition-all resize-none"
-                                      placeholder="What's on your mind?"></textarea>
+                                class="w-full px-4 py-3 bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-teal-400 focus:ring-2 focus:ring-teal-400/20 transition-all resize-none"
+                                placeholder="What's on your mind?"></textarea>
                         </div>
                         <input type="text" name="_gotcha" style="display:none !important">
                         <button type="submit"
-                                class="w-full py-4 rounded-xl text-lg font-semibold flex items-center justify-center bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
+                            class="w-full py-4 rounded-xl text-lg font-semibold flex items-center justify-center bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white hover:shadow-lg hover:shadow-teal-500/30 transition-all">
                             <i class="fas fa-paper-plane mr-2"></i>Send Message
                         </button>
 
-                        <!-- Form Status Message -->
                         <div id="form-status" class="mt-4 text-center hidden">
                             <p class="text-teal-400">
                                 <i class="fas fa-check-circle mr-2"></i>Thanks! I'll get back to you soon.
@@ -750,24 +783,27 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-8 border-t border-blue-500/20 bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 <div class="text-center md:text-left">
-                    <a href="#home" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    <a href="#home"
+                        class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
                         &lt; Inayat /&gt;
                     </a>
                 </div>
 
                 <div class="flex items-center gap-6">
-                    <a href="https://linkedin.com/in/inayat-engineer" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-400 transition-colors">
+                    <a href="https://linkedin.com/in/inayat-engineer" target="_blank" rel="noopener noreferrer"
+                        class="text-slate-500 hover:text-teal-400 transition-colors">
                         <i class="fab fa-linkedin text-xl"></i>
                     </a>
-                    <a href="https://github.com/inayat-engineer" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-400 transition-colors">
+                    <a href="https://github.com/inayat-engineer" target="_blank" rel="noopener noreferrer"
+                        class="text-slate-500 hover:text-teal-400 transition-colors">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="mailto:inayatalishar.786@gmail.com" rel="noopener noreferrer" class="text-slate-500 hover:text-teal-400 transition-colors">
+                    <a href="mailto:inayatalishar.786@gmail.com" rel="noopener noreferrer"
+                        class="text-slate-500 hover:text-teal-400 transition-colors">
                         <i class="fas fa-envelope text-xl"></i>
                     </a>
                 </div>
@@ -781,10 +817,8 @@
         </div>
     </footer>
 
-    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Custom JavaScript -->
     <script>
         // Initialize AOS
         AOS.init({
@@ -794,180 +828,177 @@
             offset: 100
         });
 
+        // 1. Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-    // 1. Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
-    function openMobileMenu() {
-        if (mobileMenu) {
-            mobileMenu.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    function closeMobileMenu() {
-        if (mobileMenu) {
-            mobileMenu.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    }
-
-    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-    if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
-
-    // Close menu when clicking a link
-    mobileNavLinks.forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (mobileMenu && mobileMenu.classList.contains('active') &&
-            !mobileMenu.contains(e.target) &&
-            !mobileMenuBtn.contains(e.target)) {
-            closeMobileMenu();
-        }
-    });
-
-    // 2. Smooth Scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const headerOffset = 80;
-                const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+        function openMobileMenu() {
+            if (mobileMenu) {
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
             }
-        });
-    });
-
-    // 3. Navbar Shadow on Scroll
-    const navbar = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('shadow-lg', 'shadow-slate-900/50');
-        } else {
-            navbar.classList.remove('shadow-lg', 'shadow-slate-900/50');
         }
-    });
 
-    // 4. Active Navigation Link Highlighting
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
+        function closeMobileMenu() {
+            if (mobileMenu) {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
 
-    window.addEventListener('scroll', () => {
-        let current = '';
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+        if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobileMenu);
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - 200) {
-                current = section.getAttribute('id');
+        // Close menu when clicking a link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (mobileMenu && mobileMenu.classList.contains('active') &&
+                !mobileMenu.contains(e.target) &&
+                !mobileMenuBtn.contains(e.target)) {
+                closeMobileMenu();
             }
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('text-teal-400', 'font-semibold');
-            link.classList.add('text-slate-400');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.remove('text-slate-400');
-                link.classList.add('text-teal-400', 'font-semibold');
-            }
-        });
-    });
+        // 2. Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-    // 5. Skill Bar Animation
-    const skillBars = document.querySelectorAll('.skill-bar');
-    const skillsSection = document.getElementById('skills');
-
-    const animateSkillBars = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                skillBars.forEach(bar => {
-                    const width = bar.style.width;
-                    bar.style.width = '0%';
-                    setTimeout(() => {
-                        bar.style.width = width;
-                    }, 100);
-                });
-                observer.unobserve(entry.target);
-            }
-        });
-    };
-
-    const skillsObserver = new IntersectionObserver(animateSkillBars, {
-        threshold: 0.3
-    });
-
-    if (skillsSection) {
-        skillsObserver.observe(skillsSection);
-    }
-
-    // 6. Formspree AJAX Submission (Fixed Code)
-    var form = document.getElementById("contact-form");
-
-    if (form) {
-        async function handleSubmit(event) {
-            event.preventDefault(); // Page reload hone se rokta hai
-            var status = document.createElement("p");
-            status.style.color = "#4ade80"; // Green color
-            status.style.marginTop = "15px";
-            status.style.textAlign = "center";
-            status.style.fontWeight = "bold";
-
-            var data = new FormData(event.target);
-
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 }
-            }).then(response => {
-                if (response.ok) {
-                    // Success!
-                    status.innerHTML = "Thanks! Your message has been sent successfully. 🚀";
-                    form.appendChild(status);
-                    form.reset(); // Form clear karo
-
-                    // 5 second baad message hata do
-                    setTimeout(() => {
-                        status.remove();
-                    }, 5000);
-                } else {
-                    // Error
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            status.innerHTML = "Oops! There was a problem sending your message."
-                            status.style.color = "red";
-                        }
-                        form.appendChild(status);
-                    })
-                }
-            }).catch(error => {
-                status.innerHTML = "Oops! There was a problem sending your message."
-                status.style.color = "red";
-                form.appendChild(status);
             });
-        }
-        form.addEventListener("submit", handleSubmit);
-    }
+        });
 
-    // 7. Console Easter Egg
-    console.log('%c👋 Hey there, curious one!', 'font-size: 20px; font-weight: bold; color: #14b8a6;');
-    console.log('%c🛠️ Built by Inayat Ali Shar', 'font-size: 14px; color: #94a3b8;');
-    console.log('%c💻 GitHub: https://github.com/inayat-engineer', 'font-size: 12px; color: #64748b;');
-</script>
+        // 3. Navbar Shadow on Scroll
+        const navbar = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg', 'shadow-slate-900/50');
+            } else {
+                navbar.classList.remove('shadow-lg', 'shadow-slate-900/50');
+            }
+        });
+
+        // 4. Active Navigation Link Highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-teal-400', 'font-semibold');
+                link.classList.add('text-slate-400');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-slate-400');
+                    link.classList.add('text-teal-400', 'font-semibold');
+                }
+            });
+        });
+
+        // 5. Skill Bar Animation
+        const skillBars = document.querySelectorAll('.skill-bar');
+        const skillsSection = document.getElementById('skills');
+
+        const animateSkillBars = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const skillsObserver = new IntersectionObserver(animateSkillBars, {
+            threshold: 0.3
+        });
+
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // 6. Formspree AJAX Submission
+        var form = document.getElementById("contact-form");
+
+        if (form) {
+            async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.createElement("p");
+                status.style.color = "#4ade80";
+                status.style.marginTop = "15px";
+                status.style.textAlign = "center";
+                status.style.fontWeight = "bold";
+
+                var data = new FormData(event.target);
+
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        status.innerHTML = "Thanks! Your message has been sent successfully. 🚀";
+                        form.appendChild(status);
+                        form.reset();
+
+                        setTimeout(() => {
+                            status.remove();
+                        }, 5000);
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                            } else {
+                                status.innerHTML = "Oops! There was a problem sending your message."
+                                status.style.color = "red";
+                            }
+                            form.appendChild(status);
+                        })
+                    }
+                }).catch(error => {
+                    status.innerHTML = "Oops! There was a problem sending your message."
+                    status.style.color = "red";
+                    form.appendChild(status);
+                });
+            }
+            form.addEventListener("submit", handleSubmit);
+        }
+
+        // 7. Console Easter Egg
+        console.log('%c👋 Hey there, curious one!', 'font-size: 20px; font-weight: bold; color: #14b8a6;');
+        console.log('%c🛠️ Built by Inayat Ali Shar', 'font-size: 14px; color: #94a3b8;');
+        console.log('%c💻 GitHub: https://github.com/inayat-engineer', 'font-size: 12px; color: #64748b;');
+    </script>
 </body>
+
 </html>
