@@ -1,4 +1,14 @@
-<div align="center">
+<meta name="description" content="Inayat Ali Shar - Computer Systems Engineer passionate about AI, Data Science, and building cool things with code.">
+...
+<meta property="og:title" content="Inayat Ali Shar - AI & Data Science Enthusiast">
+<meta property="og:description" content="Computer Systems Engineer | Exploring Network Automation & Web Dev">
+<meta property="og:type" content="website">
+<title>Inayat Ali Shar | AI & Data Science Enthusiast</title><meta name="description" content="Computer Systems Engineer at MUET building real-world Python apps, network security tools, and AI-powered dashboards.">
+...
+<meta property="og:title" content="Inayat Ali Shar | Python Developer & Systems Engineer">
+<meta property="og:description" content="Computer Systems Engineer at MUET building real-world Python apps, network security tools, and AI-powered dashboards.">
+<meta property="og:type" content="website">
+<title>Inayat Ali Shar | Python Developer & Systems Engineer</title><div align="center">
 
 # 🌐 Inayat Ali Shar — Personal Portfolio
 
