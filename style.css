@@ -59,14 +59,21 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255, 255, 255, 0.45);
+  background: linear-gradient(135deg, #a78bfa, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0;
+  font-weight: 500;
 }
 
 .hero-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #00f5c4;
+  background: linear-gradient(135deg, #00f5c4 0%, #38bdf8 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0;
   line-height: 1.3;
 }
