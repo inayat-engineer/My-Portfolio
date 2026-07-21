@@ -1,16 +1,16 @@
-<meta name="description" content="Inayat Ali Shar - Computer Systems Engineer passionate about AI, Data Science, and building cool things with code.">
+<meta name="description" content="Inayat Ali  - Computer Systems Engineer passionate about AI, Data Science, and building cool things with code.">
 ...
-<meta property="og:title" content="Inayat Ali Shar - AI & Data Science Enthusiast">
+<meta property="og:title" content="Inayat Ali  - AI & Data Science Enthusiast">
 <meta property="og:description" content="Computer Systems Engineer | Exploring Network Automation & Web Dev">
 <meta property="og:type" content="website">
-<title>Inayat Ali Shar | AI & Data Science Enthusiast</title><meta name="description" content="Computer Systems Engineer at MUET building real-world Python apps, network security tools, and AI-powered dashboards.">
+<title>Inayat Ali  | AI & Data Science Enthusiast</title><meta name="description" content="Computer Systems Engineer at MUET building real-world Python apps, network security tools, and AI-powered dashboards.">
 ...
-<meta property="og:title" content="Inayat Ali Shar | Python Developer & Systems Engineer">
+<meta property="og:title" content="Inayat Ali | Python Developer & Systems Engineer">
 <meta property="og:description" content="Computer Systems Engineer at MUET building real-world Python apps, network security tools, and AI-powered dashboards.">
 <meta property="og:type" content="website">
-<title>Inayat Ali Shar | Python Developer & Systems Engineer</title><div align="center">
+<title>Inayat Ali | Python Developer & Systems Engineer</title><div align="center">
 
-# 🌐 Inayat Ali Shar — Personal Portfolio
+# 🌐 Inayat Ali  — Personal Portfolio
 
 ![Portfolio Preview](portfolio.jpeg)
 
@@ -182,12 +182,12 @@ Contributions, issues, and feature requests are welcome! If you have ideas to im
 
 I'm always open to interesting conversations, collaboration opportunities, or just a friendly hello! 👋
 
-| Platform | Link |
-|---|---|
-| 🧑‍💻 **GitHub** | [@inayat-engineer](https://github.com/inayat-engineer) |
-| 💼 **LinkedIn** | [Inayat Ali Shar](https://linkedin.com/in/inayat-engineer) |
+| Platform | Link                                                              |
+|---|-------------------------------------------------------------------|
+| 🧑‍💻 **GitHub** | [@inayat-engineer](https://github.com/inayat-engineer)            |
+| 💼 **LinkedIn** | [Inayat Ali Shar](https://linkedin.com/in/inayat-engineer)           |
 | 📧 **Email** | [inayatalishar.786@gmail.com](mailto:inayatalishar.786@gmail.com) |
-| 🌐 **Portfolio** | [inayatshar.me](https://inayatshar.me) |
+| 🌐 **Portfolio** | [inayatshar.me](https://inayatshar.me)                            |
 
 </div>
 
@@ -203,8 +203,8 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **⭐ If you found this project helpful or inspiring, a star on this repo would mean the world! ⭐**
 
-Made with ❤️ & lots of ☕ by **Inayat Ali Shar**
+Made with ❤️ & lots of ☕ by **Inayat Ali **
 
-© 2026 Inayat Ali Shar. All rights reserved.
+© 2026 Inayat Ali . All rights reserved.
 
 </div>
